@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Baby</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+</head>
+<body style="background-image: url('images/background.jpg')" class="flex justify-center h-screen items-center">
+    <div class="bg-white border px-10 py-8 border-4 border-purple-300 
+    shadow-lg shadow-white-300 rounded-xl text-center animate__animated animate__bounceInDown m-8 w-80" id="kartu">
+        <h1 class="text-3xl">Happy Birthday</h1>
+        <h1 class="text-4xl text-purple-300 font-bold animate__animated animate__swing 
+        animate__infinite">Fayruuzzz</h1>
+        <button class="p-2 bg-purple-100 rounded mt-5 hover:bg-purple-200 transition ease-in 
+        w-full animate__animated animate__delay-1s animate__tada" onclick="pageTwo()">Click to see your surprise!</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js"></script>
+    <script>
+    confetti();
+    </script>
+    <script>
+        let kartu = document.getElementById("kartu");
+    function pageTwo() {
+        kartu.innerHTML = `
+        <h1 class=" text-wrap animate__animated animate__zoomIn">
+            hi baby, happy birthday my girl. Actually I have a bunch of things I wanna tell you. 
+            Firstly, of course, I am really really grateful to had my problems with my friends 
+            back then so I finally recognize you. You have been so impactful in my life in many 
+            positive ways baby. Thanks for always being there my sweetheart. Though we are 
+            living in a different country right now, I hope you will always be the Fayruuz I 
+            know. The girl with the warmest hug and sweetest smile I've ever met in my life. 
+            The girl that always find her way to cheer me up even at my worst days. The girl I 
+            loved so much that I hope this world will always be kind for her. I really wish all 
+            the best things you can get in your upcoming age because you really deserved it baby. 
+            I love you so much, now and forever <3.
+        </h1>
+        <h2 class="mt-5 animate__animated animate__fadeIn">
+            From: kiyak :) 
+        </h2>
+        <button class="p-2 bg-purple-100 rounded mt-5 hover:bg-purple-200 transition ease-in 
+        w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()">Close</button>`
+    };
+    function refresh() {
+        location.reload();
+    };
+    </script>
+</body>
+</html>
